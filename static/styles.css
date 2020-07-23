@@ -1,0 +1,72 @@
+
+#toggle-cake{
+    display: none; 
+    visibility:hidden
+}
+#toggle-cake-label{
+
+    display: block; 
+    padding:0.5em; 
+    text-align:left; 
+    cursor:pointer
+}
+
+#expand-cake {
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.5s;
+}
+
+#toggle-cake:checked ~ #expand-cake {
+    height: 350px;
+}
+
+.form-control-range {
+    margin: 4% 0;
+}
+
+td img {
+    width: 150px;
+}
+.table td {
+    vertical-align: middle;
+    position: relative;
+}
+
+.form-wrapper{
+    margin: 0;
+    cursor: pointer;
+}
+
+html, body{
+    min-height: 100%;
+}
+body{
+    position: relative;
+    background-color: white;
+}
+.edit-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background-color: rgba(0,0,0,0.5); /*dim the background*/
+  }
+  .cupcake-modal {
+    width: 300px;
+    height: 300px;
+    line-height: 30px;
+    position: fixed;
+    background-color:white;
+    margin:0 auto;
+    top: 30%; 
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -150px;
+    background-color: #f1c40f;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 11; 
+}

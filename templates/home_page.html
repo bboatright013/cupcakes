@@ -1,0 +1,33 @@
+{%extends 'base.html'%}
+
+{% block title%}Home Page{%endblock%}
+
+{%block main%}
+
+<div class="container form-wrapper">
+    <input id="toggle-cake" type="checkbox">
+    <label id="toggle-cake-label" for="toggle-cake" >Want to add a cupcake? Click here! </label>
+    <div id="expand-cake">
+        {% include 'add_cupcake.html' %}
+    </div>
+</div>
+
+
+
+<table class="table m-2">
+    <thead><tr>
+        <th scope="col">Edit</th>
+        <th scope="col">Pic</th>
+        <th scope="col">Cupcake</th>
+        <th scope="col">Rating</th>
+        <th scope="col">Size</th>
+    </tr></thead>
+    <tbody>
+
+    </tbody>
+</table>
+
+
+{% include 'edit_overlay.html'%}
+
+{%endblock%}
